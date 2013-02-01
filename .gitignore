@@ -16,4 +16,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+<<<<<<< HEAD
 UserInterfaceState.xcuserstate
+=======
+>>>>>>> bb89526214200d9cea450de532c02521f4a4ac72
