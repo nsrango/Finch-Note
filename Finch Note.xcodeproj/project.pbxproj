@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16627A7D16BB077900D43C9D /* EntryCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16627A7C16BB077900D43C9D /* EntryCellView.m */; };
-		168A20E616BB707000C7DA17 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A20E516BB707000C7DA17 /* EntryController.m */; };
 		168A20ED16BB838700C7DA17 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A20EC16BB838700C7DA17 /* Entry.m */; };
-		168A20F416BBA29F00C7DA17 /* EntryArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A20F316BBA29F00C7DA17 /* EntryArrayController.m */; };
 		1693B19216BA678E0051AEF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1693B19116BA678E0051AEF4 /* Cocoa.framework */; };
 		1693B19C16BA678E0051AEF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1693B19A16BA678E0051AEF4 /* InfoPlist.strings */; };
 		1693B19E16BA678E0051AEF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1693B19D16BA678E0051AEF4 /* main.m */; };
@@ -18,17 +16,15 @@
 		1693B1A516BA678E0051AEF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1693B1A416BA678E0051AEF4 /* AppDelegate.m */; };
 		1693B1A816BA678E0051AEF4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1693B1A616BA678E0051AEF4 /* MainMenu.xib */; };
 		1693B1AB16BA678E0051AEF4 /* Finch_Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1693B1A916BA678E0051AEF4 /* Finch_Note.xcdatamodeld */; };
+		16C63B0D16BC145D0098A1E9 /* NoteWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C63B0C16BC145D0098A1E9 /* NoteWindow.xib */; };
+		16C63B1016BC14FB0098A1E9 /* NoteWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C63B0F16BC14FB0098A1E9 /* NoteWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16627A7B16BB077900D43C9D /* EntryCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCellView.h; sourceTree = "<group>"; };
 		16627A7C16BB077900D43C9D /* EntryCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCellView.m; sourceTree = "<group>"; };
-		168A20E416BB707000C7DA17 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
-		168A20E516BB707000C7DA17 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 		168A20EB16BB838700C7DA17 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		168A20EC16BB838700C7DA17 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
-		168A20F216BBA29F00C7DA17 /* EntryArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryArrayController.h; sourceTree = "<group>"; };
-		168A20F316BBA29F00C7DA17 /* EntryArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryArrayController.m; sourceTree = "<group>"; };
 		1693B18D16BA678E0051AEF4 /* Finch Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finch Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1693B19116BA678E0051AEF4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1693B19416BA678E0051AEF4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -43,6 +39,9 @@
 		1693B1A416BA678E0051AEF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1693B1A716BA678E0051AEF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1693B1AA16BA678E0051AEF4 /* Finch_Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finch_Note.xcdatamodel; sourceTree = "<group>"; };
+		16C63B0C16BC145D0098A1E9 /* NoteWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteWindow.xib; sourceTree = "<group>"; };
+		16C63B0E16BC14FB0098A1E9 /* NoteWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteWindowController.h; sourceTree = "<group>"; };
+		16C63B0F16BC14FB0098A1E9 /* NoteWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,18 +95,7 @@
 		1693B19716BA678E0051AEF4 /* Finch Note */ = {
 			isa = PBXGroup;
 			children = (
-				168A20E416BB707000C7DA17 /* EntryController.h */,
-				168A20E516BB707000C7DA17 /* EntryController.m */,
-				168A20F216BBA29F00C7DA17 /* EntryArrayController.h */,
-				168A20F316BBA29F00C7DA17 /* EntryArrayController.m */,
-				1693B1A316BA678E0051AEF4 /* AppDelegate.h */,
-				1693B1A416BA678E0051AEF4 /* AppDelegate.m */,
-				16627A7B16BB077900D43C9D /* EntryCellView.h */,
-				16627A7C16BB077900D43C9D /* EntryCellView.m */,
-				1693B1A616BA678E0051AEF4 /* MainMenu.xib */,
-				1693B1A916BA678E0051AEF4 /* Finch_Note.xcdatamodeld */,
-				168A20EB16BB838700C7DA17 /* Entry.h */,
-				168A20EC16BB838700C7DA17 /* Entry.m */,
+				16C63B0216BC12C60098A1E9 /* Sourece */,
 				1693B19816BA678E0051AEF4 /* Supporting Files */,
 			);
 			path = "Finch Note";
@@ -123,6 +111,40 @@
 				1693B1A016BA678E0051AEF4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16C63B0216BC12C60098A1E9 /* Sourece */ = {
+			isa = PBXGroup;
+			children = (
+				16C63B1116BC15160098A1E9 /* Data */,
+				16C63B0B16BC14100098A1E9 /* UI */,
+				1693B1A316BA678E0051AEF4 /* AppDelegate.h */,
+				1693B1A416BA678E0051AEF4 /* AppDelegate.m */,
+				16627A7B16BB077900D43C9D /* EntryCellView.h */,
+				16627A7C16BB077900D43C9D /* EntryCellView.m */,
+				16C63B0E16BC14FB0098A1E9 /* NoteWindowController.h */,
+				16C63B0F16BC14FB0098A1E9 /* NoteWindowController.m */,
+			);
+			name = Sourece;
+			sourceTree = "<group>";
+		};
+		16C63B0B16BC14100098A1E9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1693B1A616BA678E0051AEF4 /* MainMenu.xib */,
+				16C63B0C16BC145D0098A1E9 /* NoteWindow.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		16C63B1116BC15160098A1E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1693B1A916BA678E0051AEF4 /* Finch_Note.xcdatamodeld */,
+				168A20EB16BB838700C7DA17 /* Entry.h */,
+				168A20EC16BB838700C7DA17 /* Entry.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +201,7 @@
 				1693B19C16BA678E0051AEF4 /* InfoPlist.strings in Resources */,
 				1693B1A216BA678E0051AEF4 /* Credits.rtf in Resources */,
 				1693B1A816BA678E0051AEF4 /* MainMenu.xib in Resources */,
+				16C63B0D16BC145D0098A1E9 /* NoteWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,9 +216,8 @@
 				1693B1A516BA678E0051AEF4 /* AppDelegate.m in Sources */,
 				1693B1AB16BA678E0051AEF4 /* Finch_Note.xcdatamodeld in Sources */,
 				16627A7D16BB077900D43C9D /* EntryCellView.m in Sources */,
-				168A20E616BB707000C7DA17 /* EntryController.m in Sources */,
 				168A20ED16BB838700C7DA17 /* Entry.m in Sources */,
-				168A20F416BBA29F00C7DA17 /* EntryArrayController.m in Sources */,
+				16C63B1016BC14FB0098A1E9 /* NoteWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

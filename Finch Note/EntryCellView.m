@@ -11,7 +11,6 @@
 @implementation EntryCellView
 
 @synthesize entryTextField;
-@synthesize automatic = _automatic;
 
 - (id)initWithFrame:(NSRect)frame
 {

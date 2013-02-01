@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "EntryController.h"
+#import "NoteWindowController.h"
 
 @implementation AppDelegate
 
@@ -17,7 +17,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
+    noteWindowController = [[NoteWindowController alloc] initWithWindowNibName:@"NoteWindow"];
+    [noteWindowController showWindow:self];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.narango.Finch_Note" in the user's Application Support directory.
@@ -124,6 +125,7 @@
 // Performs the save action for the application, which is to send the save: message to the application's managed object context. Any encountered errors are presented to the user.
 - (IBAction)saveAction:(id)sender
 {
+    NSLog(@"saving");
     NSError *error = nil;
     
     if (![[self managedObjectContext] commitEditing]) {

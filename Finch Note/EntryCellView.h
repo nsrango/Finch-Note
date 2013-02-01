@@ -11,7 +11,5 @@
 @interface EntryCellView : NSTableCellView
 
 @property (nonatomic) IBOutlet NSTextField * entryTextField;
-@property (nonatomic) Boolean automatic;
-
 
 @end

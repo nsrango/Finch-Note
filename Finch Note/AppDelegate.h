@@ -8,9 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class EntryController;
+@class NoteWindowController;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
+    NoteWindowController * noteWindowController;
 }
 
 @property (assign) IBOutlet NSWindow *window;
