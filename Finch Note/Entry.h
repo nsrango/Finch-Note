@@ -14,7 +14,8 @@
 
 @property (nonatomic, retain) NSNumber * automatic;
 @property (nonatomic, retain) NSDate * date;
-@property (nonatomic, retain) id text;
 @property (nonatomic, retain) NSNumber * mostRecent;
+@property (nonatomic, retain) id text;
+@property (nonatomic, retain) NSNumber * imported;
 
 @end

@@ -3,10 +3,11 @@
     <entity name="Entry" representedClassName="Entry" syncable="YES">
         <attribute name="automatic" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="imported" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="mostRecent" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Entry" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Entry" positionX="160" positionY="192" width="128" height="120"/>
     </elements>
 </model>

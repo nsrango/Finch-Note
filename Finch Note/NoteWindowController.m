@@ -8,6 +8,7 @@
 
 #import "NoteWindowController.h"
 #import "AppDelegate.h"
+#import "Entry.h"
 
 @implementation NoteWindowController
 
@@ -33,6 +34,16 @@
 
 - (IBAction)addNote:(id)sender {
     NSLog(@"added note");
+    
+    Entry *entry = (Entry *)[NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:_managedObjectContext];
+    
+    [entry setDate:[NSDate date]];
+    [entry setText:@"Write a note!"];
+    [entry setAutomatic: [NSNumber numberWithBool:YES]];
+}
+
+- (NSArray *)dateSortDescriptor {
+    return [NSArray arrayWithObject: [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES]];
 }
 
 @end

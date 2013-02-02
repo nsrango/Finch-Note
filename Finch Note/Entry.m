@@ -13,7 +13,8 @@
 
 @dynamic automatic;
 @dynamic date;
-@dynamic text;
 @dynamic mostRecent;
+@dynamic text;
+@dynamic imported;
 
 @end

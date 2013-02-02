@@ -14,5 +14,5 @@
 @property (nonatomic) NSManagedObjectContext * managedObjectContext;
 
 - (IBAction)addNote:(id)sender;
-
+- (NSArray *)dateSortDescriptor;
 @end
