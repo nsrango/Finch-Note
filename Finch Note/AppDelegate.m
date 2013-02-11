@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "NoteWindowController.h"
+#import "ReadNoteWindowController.h"
 
 @implementation AppDelegate
 
@@ -17,8 +17,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    noteWindowController = [[NoteWindowController alloc] initWithWindowNibName:@"NoteWindow"];
-    [noteWindowController showWindow:self];
+    readNoteWindowController = [[ReadNoteWindowController alloc] initWithWindowNibName:@"ReadNoteWindow"];
+    [readNoteWindowController showWindow:self];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.narango.Finch_Note" in the user's Application Support directory.

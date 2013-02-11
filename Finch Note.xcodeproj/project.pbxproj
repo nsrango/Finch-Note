@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1647BBDA16C8551A00A27236 /* ReadNoteWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1647BBD916C8551A00A27236 /* ReadNoteWindow.xib */; };
+		1647BBE116C85B4300A27236 /* ReadNoteWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647BBE016C85B4300A27236 /* ReadNoteWindowController.m */; };
 		16627A7D16BB077900D43C9D /* EntryCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16627A7C16BB077900D43C9D /* EntryCellView.m */; };
 		1693B19216BA678E0051AEF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1693B19116BA678E0051AEF4 /* Cocoa.framework */; };
 		1693B19C16BA678E0051AEF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1693B19A16BA678E0051AEF4 /* InfoPlist.strings */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1647BBD916C8551A00A27236 /* ReadNoteWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadNoteWindow.xib; sourceTree = "<group>"; };
+		1647BBDF16C85B4300A27236 /* ReadNoteWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadNoteWindowController.h; sourceTree = "<group>"; };
+		1647BBE016C85B4300A27236 /* ReadNoteWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadNoteWindowController.m; sourceTree = "<group>"; };
 		16627A7B16BB077900D43C9D /* EntryCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCellView.h; sourceTree = "<group>"; };
 		16627A7C16BB077900D43C9D /* EntryCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCellView.m; sourceTree = "<group>"; };
 		1693B18D16BA678E0051AEF4 /* Finch Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finch Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +132,8 @@
 				16627A7C16BB077900D43C9D /* EntryCellView.m */,
 				16C63B0E16BC14FB0098A1E9 /* NoteWindowController.h */,
 				16C63B0F16BC14FB0098A1E9 /* NoteWindowController.m */,
+				1647BBDF16C85B4300A27236 /* ReadNoteWindowController.h */,
+				1647BBE016C85B4300A27236 /* ReadNoteWindowController.m */,
 				16C63B2116BC48280098A1E9 /* ImportController.h */,
 				16C63B2216BC48280098A1E9 /* ImportController.m */,
 			);
@@ -138,6 +145,7 @@
 			children = (
 				1693B1A616BA678E0051AEF4 /* MainMenu.xib */,
 				16C63B0C16BC145D0098A1E9 /* NoteWindow.xib */,
+				1647BBD916C8551A00A27236 /* ReadNoteWindow.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 				1693B1A216BA678E0051AEF4 /* Credits.rtf in Resources */,
 				1693B1A816BA678E0051AEF4 /* MainMenu.xib in Resources */,
 				16C63B0D16BC145D0098A1E9 /* NoteWindow.xib in Resources */,
+				1647BBDA16C8551A00A27236 /* ReadNoteWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +233,7 @@
 				16C63B1016BC14FB0098A1E9 /* NoteWindowController.m in Sources */,
 				16C63B2316BC48280098A1E9 /* ImportController.m in Sources */,
 				16C63B2A16BCA3470098A1E9 /* Entry.m in Sources */,
+				1647BBE116C85B4300A27236 /* ReadNoteWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

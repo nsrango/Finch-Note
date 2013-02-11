@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NoteWindowController;
+@class ReadNoteWindowController;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
-    NoteWindowController * noteWindowController;
+    ReadNoteWindowController * readNoteWindowController;
 }
 
 @property (assign) IBOutlet NSWindow *window;

@@ -12,4 +12,7 @@
 
 @property (nonatomic) IBOutlet NSTextField * entryTextField;
 
+- (void)selected;
+- (void)deselected;
+
 @end

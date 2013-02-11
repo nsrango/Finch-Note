@@ -27,4 +27,19 @@
     // Drawing for each cell here.
 }
 
+- (void)selected
+{
+    NSLog(@"entrySelected");
+    //convert from single line mode to multi-line mode
+    NSLog(@"trying to find the textfieldcell: %@", [entryTextField cell]);
+    [[entryTextField cell] setUsesSingleLineMode:NO];
+}
+
+- (void)deselected  
+{
+    NSLog(@"entryDeselected");
+    //convert from multi-line mode to single line mode
+    [[entryTextField cell] setUsesSingleLineMode:YES];
+}
+
 @end
