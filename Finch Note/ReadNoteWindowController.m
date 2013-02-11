@@ -22,16 +22,25 @@
         AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
         _managedObjectContext = [appDelegate managedObjectContext];
         _selectedRow = 0;
+        _selectedHeight = [[_tableView viewAtColumn:0 row:_selectedRow makeIfNecessary:NO] expandedHeight];
+        NSLog(@"initializeWithWindow: %@", self);
+        [_tableView reloadData];
     }
-    
+    NSLog(@"row height after init: %ld", _selectedHeight);
     return self;
 }
 
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    [_tableView reloadData];
+    [_tableView deselectAll:self];
+    NSLog(@"row height after windowLoad: %ld", _selectedHeight);
+}
+
+- (void)awakeFromNib
+{
+    NSLog(@"awake from nib");
 }
 
 - (IBAction)addNote:(id)sender {
@@ -64,15 +73,20 @@
     
     _selectedRow = row;
     
+    NSLog(@"number of lines: %ld", [[_tableView viewAtColumn:0 row:_selectedRow makeIfNecessary:NO] expandedHeight]);
+    _selectedHeight = [[_tableView viewAtColumn:0 row:_selectedRow makeIfNecessary:NO] expandedHeight];
     [_tableView noteHeightOfRowsWithIndexesChanged:indexSet];
 }
 
 - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row
 {
     CGFloat height;
-    //NSLog(@"selected row is: %ld", _selectedRow);
-    if (row == _selectedRow) {
-        height = 100.0;
+    NSLog(@"selected row is: %ld, %@", row,self);
+    if (row == 0) {
+        height = 100;
+    }
+    else if (row == _selectedRow) {
+        height = _selectedHeight;
     }
     else {
         height = 50;

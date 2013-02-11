@@ -10,6 +10,7 @@
 
 @interface ReadNoteWindowController : NSWindowController <NSTableViewDelegate>{
     NSInteger _selectedRow;
+    NSInteger _selectedHeight;
 }
 
 

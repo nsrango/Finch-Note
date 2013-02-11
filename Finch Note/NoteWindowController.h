@@ -8,11 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NoteWindowController : NSWindowController
+@interface NoteWindowController : NSWindowController <NSTableViewDelegate>
 
 
 @property (nonatomic) NSManagedObjectContext * managedObjectContext;
 
 - (IBAction)addNote:(id)sender;
+
 - (NSArray *)dateSortDescriptor;
+
 @end

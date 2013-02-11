@@ -15,4 +15,6 @@
 - (void)selected;
 - (void)deselected;
 
+- (NSInteger)expandedHeight;
+
 @end
